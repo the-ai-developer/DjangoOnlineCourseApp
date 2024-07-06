@@ -1,0 +1,51 @@
+{% extends "base_generic.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to My Django App!</h1>
+    <p class="lead">This is a simple application to manage and book courses.</p>
+    <hr class="my-4">
+    <p>Explore our courses and enhance your skills.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'course_list' %}" role="button">View Courses</a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Our App</h2>
+            <p>Our app provides a platform where users can browse, enroll in, and manage courses across various subjects. Our goal is to make learning accessible and enjoyable for everyone.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Testimonials</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <h5 class="card-title">User 1</h5>
+                            <p class="card-text">"This app is amazing! It has helped me to learn new skills and improve my knowledge."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <h5 class="card-title">User 2</h5>
+                            <p class="card-text">"A great platform with a variety of courses. Highly recommended!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <h5 class="card-title">User 3</h5>
+                            <p class="card-text">"I love the user-friendly interface and the range of courses available."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
